@@ -1,0 +1,93 @@
+html {
+  background-image: url("http://localhost:1337/uploads/dark_grunge_texture_ac80e1053e.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body {
+  margin: 0;
+  padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 700px) {
+  .headerCard {
+    width: 100%;
+    padding: 10px 0 10px 10px;
+  }
+
+  .logo {
+    width: 235px;
+  }
+
+  .bookmark {
+    padding: 0;
+    font-size: 22px;
+  }
+
+  .logoText {
+    font-size: 40px;
+  }
+
+  .heading {
+    padding: 115px 20px 0 20px;
+    font-size: 40px;
+  }
+
+  .banner {
+    font-size: 30px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+
+  .contact {
+    font-size: 18px;
+  }
+
+  .GM {
+    font-size: 23px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .headerCard {
+    width: 100%;
+    padding: 10px 0 10px 10px;
+  }
+
+  .logo {
+    width: 260px;
+  }
+
+  .bookmark {
+    padding: 0;
+    font-size: 25px;
+  }
+
+  .logoText {
+    font-size: 50px;
+  }
+
+  .heading {
+    padding: 140px 20px 0 20px;
+    font-size: 40px;
+  }
+
+  .banner {
+    font-size: 30px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+
+  .contact {
+    font-size: 30px;
+  }
+
+  .GM {
+    font-size: 23px;
+  }
+}
