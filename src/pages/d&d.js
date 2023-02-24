@@ -20,8 +20,7 @@ DnD.getInitialProps = async (ctx) => {
     const query = `${url}&${`filters[game_type][GameTypeName][$eq]=${encodeURIComponent(
         category)}`}`
     const data = await fetch(query)
-    const games = await data.json();
-
+    const games = await data.json()
     return { games }
 }
 

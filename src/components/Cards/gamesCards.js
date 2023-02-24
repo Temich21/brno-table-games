@@ -2,10 +2,25 @@ import styles from "./Cards.module.css";
 import { backendUrl } from "@/constants";
 
 const Games = ({ games }) => {
-    const newsElements = games.data.map((data) => (
+    if (games.data.length == 0) {
+        return <div><EmptyPage /></div>
+    }
+
+    const gamesElements = games.data.map((data) => (
         <GameCard key={data.id} data={data.attributes} />
     ))
-    return <div>{newsElements}</div>;
+    return <div>{gamesElements}</div>
+
+}
+
+const EmptyPage = () => {
+    return (
+        <p className={styles.emptypageText}>
+            К сожалению, на данный момент здесь нет контента.
+            Наша команда усердно работает над организацией интересных игр, чтобы помочь вам в вашем игровом путешествии.
+            Заходите в ближайшее время, чтобы узнать, что нового! А пока, почему бы не изучить другие наши страницы? Спасибо за терпение и удачной игры!
+        </p>
+    )
 }
 
 const GameCard = ({ data }) => {
@@ -17,12 +32,11 @@ const GameCard = ({ data }) => {
                     : styles.contentWithoutImage
             }
         >
-            {data.Image.data != null ? (
+            {data.Image.data &&
                 <img
                     src={backendUrl + data.Image.data.attributes.url}
                     className={styles.picture}
-                ></img>
-            ) : null}
+                ></img>}
 
             <div
                 className={

@@ -46,3 +46,51 @@
     font-size: 18px;
     padding-bottom: 4px
 }
+
+.emptypageText{
+  width: 920px;
+  margin: 0 auto;
+  color: #DBDBDB;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 20px 0;
+  font-size: 25px;
+}
+
+@media (max-width: 480px) {
+  .banner {
+    font-size: 30px;
+  }
+
+  .text {
+    font-size: 22px;
+  }
+
+  .GM {
+    font-size: 25px;
+  }
+
+  .emptypageText {
+  font-size: 35px;
+  padding-left: 10px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 700px) {  
+  .banner {
+    font-size: 30px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+
+  .GM {
+    font-size: 23px;
+  }
+
+  .emptypageText {
+    font-size: 30px;
+    padding-left: 10px;
+    }
+}
+  

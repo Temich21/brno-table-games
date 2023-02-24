@@ -17,12 +17,11 @@ const NewsCard = ({ data }) => {
           : styles.contentWithoutImage
       }
     >
-      {data.Image.data != null ? (
+      {data.Image.data &&
         <img
           src={backendUrl + data.Image.data.attributes.url}
           className={styles.picture}
-        ></img>
-      ) : null}
+        ></img>}
 
       <div
         className={

@@ -61,3 +61,45 @@
 .logoLink {
     text-decoration: none;
 }
+
+@media (max-width: 480px) {
+  .logo {
+    width: 260px;
+  }
+
+  .navigation {
+    padding: 0;
+  }
+
+  .bookmarkText,
+    .active {
+    padding: 0;
+    font-size: 26px;
+  }
+
+  .logoText {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 700px) {
+    .logo {
+      width: 235px;
+    }
+  
+    .navigation {
+      padding: 0;
+    }
+
+    .bookmarkText, .active {
+      padding: 0;
+      font-size: 25px;
+    }
+  
+    .logoText {
+      font-size: 40px;
+    }
+  
+  }
+  
+  
