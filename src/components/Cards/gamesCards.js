@@ -2,7 +2,7 @@ import styles from "./Cards.module.css";
 import { backendUrl } from "@/constants";
 
 const Games = ({ games }) => {
-    if (games.data.length == 0) {
+    if (!games.data.length) {
         return <div><EmptyPage /></div>
     }
 
